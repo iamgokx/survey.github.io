@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <title>Survery Form</title>
+</head>
+
+<body>
+  <div class="heading">
+    <h1 id="title">Survery form</h1>
+    <p id="description">Thankyou for taking time to fill out my sample form</p>
+  </div>
+  <div class="form-div">
+    <form id="survey-form" method="post" action="#">
+
+
+      <fieldset class="fieldset-1">
+
+        <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"></label>
+        <label id="email-label">Email<input id="email" type="email" required placeholder="Enter your email"> </label>
+        <label id="number-label">Age <input id="number" type="number" min="13" max="100" placeholder="Enter your age">
+
+
+          <label id="lang">What is your favourite programming language?
+            <select id="langs" id="dropdown">
+              <option value="">select one</option>
+              <option value="part">Java</option>
+              <option value="full">Python</option>
+              <option value="nothing">C</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+
+          <label id="learn-question">
+            <label">Would you want to learn a new language?
+
+              <br>
+              <label class="inline-gap"><input class="inline" id="ans-val" name="suggestion" type="radio"
+                  value="definitely">Definitely</label>
+              <label class="inline-gap"><input class="inline" name="suggestion" type="radio" value="maybe">Maybe</label>
+              <label class="inline-gap"><input class="inline" name="suggestion" type="radio" value="no">No</label>
+          </label>
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset-2">
+
+        <label id="like-programming" for="features">What do You like about programming?
+          <select name="features" id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Challanges</option>
+            <option value="2">Community</option>
+            <option value="3">Competition</option>
+          </select>
+        </label>
+
+        <label id="improvements" for="improvements">What improvemts do you want to see in yourself?
+          <label id="options"><input type="checkbox" value="motivation">Motivational improvements</label>
+          <label id="options" for="persistancy"><input type="checkbox" value="persistancy"
+              name="persistancy">Persistancy</label>
+          <label id="options" for="level-of-programming"><input type="checkbox" value="level-programming"
+              name="level-programming">Increase in level of programming</label>
+          <label id="options"><input value="pay" name="pay" type="checkbox">Increase in pay opportunities</label>
+          <label id="options"><input value="not" name="not" type="checkbox">Better communication skills</label>
+        </label>
+        </label>
+        <div class="border"></div>
+      </fieldset>
+
+
+
+      <fieldset class="fieldset-3">
+        <label id="bio" for="suggestions">Any Comments or suggestions?
+          <textarea id="suggestions" placeholder="eg. improvements"></textarea>
+        </label>
+
+        <label id="button">
+          <button id="submit">Sumbit</button>
+        </label>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>
